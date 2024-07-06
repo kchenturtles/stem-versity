@@ -3,16 +3,18 @@ import {
     Card,
     CardBody,
   } from "@material-tailwind/react";
-  
+import Link from "next/link";
   
   interface FeatureCardProps {
     icon: React.ElementType;
     title: string;
+    link: string;
     children: React.ReactNode;
   }
   
-  export function FeatureCard({ icon: Icon, title, children }: FeatureCardProps) {
+  export function FeatureCard({ icon: Icon, title, children, link }: FeatureCardProps) {
     return (
+      <Link href={link}>
       <Card color="transparent" shadow={false}>
         <CardBody className="grid justify-start">
           <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-gray-900 p-2.5 text-left text-white">
@@ -26,6 +28,7 @@ import {
           </Typography>
         </CardBody>
       </Card>
+      </Link>
     );
   }
 

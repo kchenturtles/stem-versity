@@ -73,7 +73,7 @@ export function Navbar() {
           variant="h6"
           color={isScrolling ? "gray" : "white"}
         >
-          Material Tailwind
+          Discussions on STEM Diversity 
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
@@ -81,11 +81,9 @@ export function Navbar() {
           }`}
         >
           <NavItem>Home</NavItem>
-          <NavItem>About Us</NavItem>
-          <NavItem>Contact Us</NavItem>
-          <NavItem href="https://www.material-tailwind.com/docs/react/installation">
-            Docs
-          </NavItem>
+          <NavItem>Resources</NavItem>
+          <NavItem>Blog</NavItem>
+          <NavItem>About</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
           <IconButton
@@ -132,8 +130,9 @@ export function Navbar() {
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
             <NavItem>Home</NavItem>
+            <NavItem>Resources</NavItem>
+            <NavItem>Blog</NavItem>
             <NavItem>About Us</NavItem>
-            <NavItem>Contact Us</NavItem>
             <NavItem href="https://www.material-tailwind.com/docs/react/installation">
               Docs
             </NavItem>

@@ -7,21 +7,20 @@ import { Button, Typography } from "@material-tailwind/react";
 function Hero() {
   return (
     <div className="relative min-h-screen w-full">
-      <header className="grid !min-h-[49rem] bg-gray-900 px-8">
+      <header className="grid !min-h-[56rem] bg-gray-900 px-8">
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2">
           <div className="col-span-1">
             <Typography variant="h1" color="white" className="mb-4">
-              Your Perfect <br /> Learning App
+              Mission
             </Typography>
             <Typography
               variant="lead"
-              className="mb-7 !text-white md:pr-16 xl:pr-28"
+              className="mb-7 !text-white md:pr-10 xl:pr-20"
             >
-              Our app is here to empower you on your quest for knowledge,
-              anytime and anywhere.
+            Science, Technology, Engineering, and Math (STEM) is the future. Innovation in STEM drives advancements in healthcare, technology, sustainability, and beyond, directly impacting the quality of life for people worldwide. Diversity in STEM is crucial to address the full range of issues that affect society today.  But statistics show that diversity remains an issue among students in STEM. How do we address this issue?
             </Typography>
-            <Typography className="mb-4" color="white" variant="h6">
-              Get the app
+            <Typography className="mb-4 mt-12" color="white" variant="h6">
+              Dive In
             </Typography>
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
               <Button
@@ -36,7 +35,7 @@ function Hero() {
                   alt="metamask"
                   className="w-6 h-6"
                 />
-                App Store
+                Resources
               </Button>
               <Button
                 size="lg"
@@ -50,7 +49,7 @@ function Hero() {
                   alt="metamask"
                   className="w-6 h-6"
                 />
-                Google Play
+                About
               </Button>
             </div>
           </div>
@@ -66,15 +65,13 @@ function Hero() {
       <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md">
         <div>
           <Typography variant="h3" color="blue-gray" className="mb-3">
-            Learning App
+            When Research meets Action
           </Typography>
           <Typography
             variant="paragraph"
             className="font-normal !text-gray-500 lg:w-5/12"
           >
-            Download our app to dive into a vast library of courses, tutorials,
-            and study materials on a wide range of subjects - from programming
-            and language learning to personal development and beyond
+            This project aims to combine research with action to address issues regarding lack of diversity in STEM. Academic statistics and information in combination with actionable steps help empower individuals and policymakers to advocate for influential steps towards inclusive STEM education and workforce practices.
           </Typography>
         </div>
       </div>

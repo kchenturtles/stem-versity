@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Typography, IconButton, Button } from "@material-tailwind/react";
 
-const LINKS = ["About Us", "Careers", "Press", "Blog", "Pricing"];
+const LINKS = ["Home", "Resources", "Blog", "About"];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
@@ -19,10 +19,10 @@ export function Footer() {
               color="white"
               className="mb-4"
             >
-              Material Tailwind
+              Discussions on STEM Diversity
             </Typography>
             <Typography color="white" className="mb-12 font-normal">
-              The reward for getting on the stage is fame.
+              Let's build our future.
             </Typography>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
               {LINKS.map((link, idx) => (
@@ -43,7 +43,7 @@ export function Footer() {
           </div>
           <div className="mt-8 w-full md:mt-0 md:w-auto">
             <Typography variant="h6" color="white" className="mb-3">
-              Get the app
+              Contact Me
             </Typography>
             <div className="flex flex-col gap-2">
               <Button
@@ -80,13 +80,13 @@ export function Footer() {
             color="white"
             className="text-center font-normal opacity-75"
           >
-            &copy; {CURRENT_YEAR} Made with{" "}
+            &copy; {CURRENT_YEAR} {" "}
             <a href="https://www.material-tailwind.com" target="_blank">
-              Material Tailwind
+              
             </a>{" "}
             by{" "}
             <a href="https://www.creative-tim.com" target="_blank">
-              Creative Tim
+              Kendree Chen
             </a>
             .
           </Typography>
