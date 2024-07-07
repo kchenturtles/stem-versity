@@ -3,7 +3,7 @@ import {
     getPostBySlug,
     getPreviousPost,
     getNextPost,
-  } from "../../../lib/api";
+  } from "../../../lib/app";
   import styles from "./styles.module.css";
   import Image from "next/image";
   import Link from "next/link";
