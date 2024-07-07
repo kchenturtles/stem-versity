@@ -3,7 +3,7 @@ import {
     getPostBySlug,
     getPreviousPost,
     getNextPost,
-  } from "../../../lib/app";
+  } from "../../../lib/api";
   import styles from "./styles.module.css";
   import Image from "next/image";
   import Link from "next/link";
@@ -18,6 +18,9 @@ import {
       "content",
       "date",
       "fundraiseText",
+      "summary",
+      "tag",
+      "type",
     ]);
   
     const previousPost = getPreviousPost(slug);
@@ -26,43 +29,38 @@ import {
     // const content = await markdownToHtml(getPost.content);
   
     return (
-      <div className="section container">
-      <div className="relative min-h-screen w-full bg-[url('/image/image-4.jpeg')] bg-cover bg-no-repeat">
-      <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
-      <div className="grid min-h-screen px-8">
-        <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
-          <div className="gap-8 flex">
+      <div className="mx-auto">
+      <header className="grid !min-h-[24rem] bg-gray-900 px-8">
+      <div className="container mx-auto mt-12 w-full lg:mt-64 ">
+      <div className="mx-2 lg:mx-4 -mb-32 rounded-xl bg-white p-5 md:p-14 shadow-md">
+        <h1 className = "y-2 w-full font-bold text-5xl !text-gray-900">
+            {getPost.title}
+          </h1>
+          <div className="block antialiased font-sans text-xl font-normal leading-relaxed text-inherit mx-auto mt-8 w-full !text-gray-900">
+          {getPost.summary}
+          </div>
+          <div className="block antialiased font-sans text-md leading-relaxed text-inherit mx-auto w-full !text-gray-900 font-bold mt-12">
+          {getPost.date}
+          </div>
+          <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
+          <button
+          className="flex items-center gap-2 mt-2 !text-gray-50 bg-gray-900 px-4 py-2 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
+              <a href = {`/${getPost.tag}`} > {getPost.tag}</a>
+            </button>
+            <button
+              className="flex items-center gap-2 mt-2 !text-gray-50 bg-gray-900 px-4 py-2 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
+              {getPost.type}
+            </button>
           </div>
         </div>
       </div>
-    </div>
-        <div className={styles.logoLine}>
+    </header>      
+      
+        <div className="mt-48">
           <Link href="/">
           </Link>
         </div>
-        <div className={styles.newsletterName}>
-          {" "}
-          <div id="17">
-            {" "}
-            <p>
-              {" "}
-              <strong>
-                <span>
-                  {" "}
-                  <Link href="/blog">NEWSLETTER</Link>{" "}
-                </span>
-                <span className={styles.vert}>
-                  <span>|</span>{" "}
-                </span>
-                <span className={styles.date}> {getPost.date} </span>{" "}
-              </strong>
-            </p>{" "}
-          </div>
-        </div>
-        <div className={styles.breakLine}> </div>
-        <div className={styles.content}>
-          <h1 className={styles.title}> {getPost.title} </h1>
-  
+        <div className={styles.content}>  
           <ReactMarkdown
             className={styles["markdown"]}
             components={{
@@ -94,18 +92,6 @@ import {
             {getPost.content}
           </ReactMarkdown>
         </div>
-        <div className={styles.button}>
-          <Link
-            href="https://trusted.bu.edu/s/1759/22/form.aspx?sid=1759&gid=2&pgid=3962&cid=7331&dids=359&bledit=1&appealcode=WEBBUA"
-            target="_blank"
-            className={styles.donateButton}
-          >
-            {" "}
-            {getPost.fundraiseText || "Support the Lobstah Bots!"}{" "}
-          </Link>
-        </div>
-        <div className={styles.breakLine}> </div>
-  
         <div className={styles.postNavBar}>
           <div>
             {previousPost ? (
@@ -124,46 +110,6 @@ import {
             ) : (
               <div />
             )}
-          </div>
-        </div>
-  
-        <div className={styles.mediaIcons}>
-          <div className={styles.icon}>
-            <Link href="https://instagram.com/burobotics246/" target="_blank">
-              {" "}
-              <Image
-                className={`responsive-image ${styles.icon}`}
-                width="40"
-                height="40"
-                alt="Instagram icon"
-                src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-filled-dark-40.png"
-              />
-            </Link>
-          </div>
-          <div className={styles.icon}>
-            <Link href="mailto:lobstahbots@gmail.com" target="_blank">
-              {" "}
-              <Image
-                className={`responsive-image ${styles.icon}`}
-                width="40"
-                height="40"
-                alt="Email icon"
-                src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/email-filled-dark-40.png"
-              />{" "}
-            </Link>{" "}
-          </div>
-          <div className={styles.icon}>
-            {" "}
-            <Link href="https://lobstahbots.com" target="_blank">
-              {" "}
-              <Image
-                className={`responsive-image ${styles.icon}`}
-                width="40"
-                height="40"
-                alt="Website icon"
-                src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/website-filled-dark-40.png"
-              />{" "}
-            </Link>{" "}
           </div>
         </div>
       </div>
