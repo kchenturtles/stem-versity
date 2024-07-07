@@ -6,6 +6,7 @@ excerpt: ""
 author: "Lobstah Bots"
 tag: "minority"
 type: "blog"
+summary: "asdfasdfasdfasdfasdfasdfasdf"
 coverImage: "/newsletter/bsu-gbos2024/bsu-gbos2024_1.jpg"
 fundraiseText: "Fund our trip to worlds!"
 ---
