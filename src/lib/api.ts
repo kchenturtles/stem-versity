@@ -48,6 +48,7 @@ export function getAllPosts(fields: string[] = []) {
     "type",
     "tag",
     "coverImage",
+    "summary",
   ];
   const slugs = getPostSlugs();
   const posts = slugs
