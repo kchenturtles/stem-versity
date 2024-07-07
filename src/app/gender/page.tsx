@@ -1,143 +1,68 @@
-"use client";
-
-import styles from "./styles.module.css";
-import { Typography, Button, Card } from "@material-tailwind/react";
+import React from "react";
+import BlogPostCard from "@/components/blog-post-card";
+import { getAllPosts } from "@/lib/api";
+import { LatestPostsCards } from "../latest-posts-cards";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Gender Representation in STEM",
+  title: "Gender Diversity in STEM",
 };
 
-const FAQS = [
-  {
-    title: "How do I get started?",
-    desc: "Getting started is easy! Simply [Provide a brief overview of the initial steps or link to a detailed guide].",
-  },
-  {
-    title: "Is there a free trial available?",
-    desc: "Yes, we offer a 30 days free trial so you can experience our mobile application with no commitment.",
-  },
-  {
-    title: "How can I upgrade my account?",
-    desc: "To upgrade your account, log in and navigate to the [Upgrade Account] section in your dashboard. Follow the prompts to select your preferred plan.",
-  },
-  {
-    title: "Can I cancel my subscription anytime?",
-    desc: "Absolutely, you can cancel your subscription at any time with no questions asked. Your subscription will remain active until the end of the current billing cycle.",
-  },
-  {
-    title: "How can I upgrade my account to paid?",
-    desc: "To upgrade your account, log in and navigate to the [Upgrade Account] section in your dashboard. Follow the prompts to select your preferred plan.",
-  },
-  {
-    title: "What if I need help or have technical issues?",
-    desc: "Our dedicated support team is here to assist you. Reach out via [mention preferred support channels, e.g., live chat, email, or phone], and we'll get back to you promptly.",
-  },
-];
 
-export default function Gender () {
+export function Gender() {
+  const posts = getAllPosts();
   return (
-    <div className="relative min-h-screen w-full">
-    <header className="grid !min-h-[56rem] bg-gray-900 px-8">
-      <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2">
-        <div className="col-span-1">
-          <Typography variant="h1" color="white" className="mb-4">
-            Mission
-          </Typography>
-          <Typography
-            variant="lead"
-            className="mb-7 !text-white md:pr-10 xl:pr-20"
-          >
-          Science, Technology, Engineering, and Math (STEM) is the future. Innovation in STEM drives advancements in healthcare, technology, sustainability, and beyond, directly impacting the quality of life for people worldwide. Diversity in STEM is crucial to address the full range of issues that affect society today.  But statistics show that diversity remains an issue among students in STEM. How do we address this issue?
-          </Typography>
-          <Typography className="mb-4 mt-12" color="white" variant="h6">
-            Dive In
-          </Typography>
-          <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
-            <Button
-              size="lg"
-              color="white"
-              className="flex justify-center items-center gap-3"
-            >
-              <Image
-                width={256}
-                height={256}
-                src="/logos/logo-apple.png"
-                alt="metamask"
-                className="w-6 h-6"
-              />
-              Resources
-            </Button>
-            <Button
-              size="lg"
-              color="white"
-              className="flex justify-center items-center gap-3"
-            >
-              <Image
-                width={256}
-                height={256}
-                src="/logos/logo-google.png"
-                alt="metamask"
-                className="w-6 h-6"
-              />
-              About
-            </Button>
+    <div>
+    <header className="grid !min-h-[24rem] bg-gray-900 px-8">
+        <div className="container mx-auto mt-12 w-full lg:mt-64 ">
+        <div className="mx-2 lg:mx-4 -mb-32 rounded-xl bg-white p-5 md:p-14 shadow-md">
+          <h1 className = "y-2 w-full font-bold text-5xl !text-gray-900">
+          Gender Diversity in STEM
+            </h1>
+            <div className="block antialiased font-sans text-xl font-normal leading-relaxed text-inherit mx-auto mt-8 w-full !text-gray-900">
+            Science, Technology, Engineering, and Math (STEM) is the future. Innovation in STEM drives advancements in healthcare, technology, sustainability, and beyond, directly impacting the quality of life for people worldwide. Diversity in STEM is crucial to address the full range of issues that affect society today.  But statistics show that diversity remains an issue among students in STEM. How do we address this issue?
+            </div>
+            <div className="block antialiased font-sans text-md leading-relaxed text-inherit mx-auto w-full !text-gray-900 font-bold mt-12">
+            Read More
+            </div>
+            <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
+            <button
+            className="flex items-center gap-2 mt-2 !text-gray-50 bg-gray-900 px-4 py-2 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
+                Research
+              </button>
+              <button
+                className="flex items-center gap-2 mt-2 !text-gray-50 bg-gray-900 px-4 py-2 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
+                Action
+              </button>
+            </div>
           </div>
         </div>
-        <Image
-          width={470}
-          height={576}
-          src="/image/iphones.png"
-          alt="team work"
-          className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
-        />
-      </div>
-    </header>
-    <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md">
-      <div>
-        <Typography variant="h3" color="blue-gray" className="mb-3">
-          When Research meets Action
-        </Typography>
-        <Typography
-          variant="paragraph"
-          className="font-normal !text-gray-500 lg:w-5/12"
-        >
-          This project aims to combine research with action to address issues regarding lack of diversity in STEM. Academic statistics and information in combination with actionable steps help empower individuals and policymakers to advocate for influential steps towards inclusive STEM education and workforce practices.
-        </Typography>
-      </div>
+      </header>
+    <div className="grid min-h-screen place-items-center p-8 mt-48">
+    <div className = "text-center block antialiased font-sans text-base text-xl leading-relaxed text-blue-gray-900 mb-2 font-bold uppercase">Research</div>
+    <div className="text-center block antialiased font-sans text-lg font-normal leading-relaxed text-inherit mx-auto w-full !text-gray-500 lg:w-11/12 lg:px-8">
+      Check out what&apos;s new in the web development and tech world! Do not
+      forget to subscribe to our blog and we will notify you with the latest
+      news.
     </div>
-  <div className="px-8 py-20">
-      <div className="container max-w-6xl mx-auto">
-        <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
-            Frequently asked questions
-          </Typography>
-          <Typography
-            variant="lead"
-            className="mx-auto mb-24 !text-gray-500 lg:w-3/5"
-          >
-            A lot of people don&apos;t appreciate the moment until it&apos;s
-            passed. I&apos;m not trying my hardest, and I&apos;m not trying to
-            do
-          </Typography>
-        </div>
-
-        <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
-          {FAQS.map(({ title, desc }) => (
-            <Card key={title} shadow={false} color="transparent">
-              <Typography color="blue-gray" className="pb-6" variant="h4">
-                {title}
-              </Typography>
-              <div className="pt-2">
-                <Typography className="font-normal !text-gray-500">
-                  {desc}
-                </Typography>
-              </div>
-            </Card>
-          ))}
-        </div>
-      </div>
+        <LatestPostsCards tag={"gender"} type={"research"} length = {3}/>
+    </div>
+    <div className="grid min-h-screen place-items-center p-8 mt-6">
+    <div className = "text-center block antialiased font-sans text-base text-xl leading-relaxed text-blue-gray-900 mb-2 font-bold uppercase">How To Take Action</div>
+    <div className="text-center block antialiased font-sans text-lg font-normal leading-relaxed text-inherit mx-auto w-full !text-gray-500 lg:w-11/12 lg:px-8">
+      Check out what&apos;s new in the web development and tech world! Do not
+      forget to subscribe to our blog and we will notify you with the latest
+      news.
+    </div>
+        <LatestPostsCards tag={"gender"} type={"blog"} length = {3}/>
+      <button
+        className="flex items-center gap-2 mt-24 text-gray-50 bg-gray-900 px-4 py-2 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+      >
+        READ MORE
+      </button>
     </div>
     </div>
   );
 }
+
+export default Gender;
