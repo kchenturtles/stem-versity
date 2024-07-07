@@ -26,29 +26,15 @@ function Hero() {
               <Button
                 size="lg"
                 color="white"
-                className="flex justify-center items-center gap-3"
+                className="flex justify-center items-center gap-3 hover:bg-gray-500"
               >
-                <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-apple.png"
-                  alt="metamask"
-                  className="w-6 h-6"
-                />
                 Resources
               </Button>
               <Button
                 size="lg"
                 color="white"
-                className="flex justify-center items-center gap-3"
+                className="flex justify-center items-center gap-3 hover:bg-gray-500"
               >
-                <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-google.png"
-                  alt="metamask"
-                  className="w-6 h-6"
-                />
                 About
               </Button>
             </div>
