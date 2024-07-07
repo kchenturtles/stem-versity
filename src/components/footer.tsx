@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Typography, IconButton, Button } from "@material-tailwind/react";
 
-const LINKS = ["Home", "Resources", "Blog", "About"];
+const LINKS = [{name:"Home", link:"#"}, {name:"Resources", link:"/resources"}, {name:"Blog", link:"/blog"}, {name:"Contact", link:"/contact"}];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
@@ -26,16 +26,16 @@ export function Footer() {
             </Typography>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
               {LINKS.map((link, idx) => (
-                <li key={link}>
+                <li key={link.name}>
                   <Typography
                     as="a"
-                    href="#"
+                    href={link.link}
                     color="white"
                     className={`py-1 font-medium transition-colors ${
                       idx === 0 ? "pr-3" : "px-3"
                     }`}
                   >
-                    {link}
+                    {link.name}
                   </Typography>
                 </li>
               ))}
@@ -48,29 +48,19 @@ export function Footer() {
             <div className="flex flex-col gap-2">
               <Button
                 color="white"
-                className="flex items-center justify-center"
+                className="flex items-center justify-center hover:bg-gray-500"
               >
-                <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-apple.png"
-                  className="-mt-0.5 mr-2 h-6 w-6"
-                  alt="ios"
-                />
-                App Store
+              <a href = "/contact">
+                About
+              </a>
               </Button>
               <Button
                 color="white"
-                className="flex items-center justify-center"
+                className="flex items-center justify-center hover:bg-gray-500"
               >
-                <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-google.png"
-                  className="-mt-0.5 mr-2 h-6 w-6"
-                  alt="ios"
-                />
-                Google Play
+               <a href = "https://github.com/kchenturtles/stem-versity">
+                View Code
+                </a>
               </Button>
             </div>
           </div>
@@ -81,11 +71,8 @@ export function Footer() {
             className="text-center font-normal opacity-75"
           >
             &copy; {CURRENT_YEAR} {" "}
-            <a href="https://www.material-tailwind.com" target="_blank">
-              
-            </a>{" "}
             by{" "}
-            <a href="https://www.creative-tim.com" target="_blank">
+            <a href="github.com/kchenturtles" target="_blank">
               Kendree Chen
             </a>
             .
@@ -93,19 +80,13 @@ export function Footer() {
 
           <div className="flex gap-2">
             <IconButton variant="text" color="white">
-              <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
+            <a href = "https://www.linkedin.com/in/kendree-chen/"><i className="fa-brands fa-linkedin text-lg" /></a>
             </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>
+            <IconButton variant="text" color="white" >
+            <a href = "https://www.instagram.com/kendree.c/"><i className="fa-brands fa-instagram text-lg" /></a>
             </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-github text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-dribbble text-2xl not-italic opacity-75"></i>
+            <IconButton variant="text" color="white" >
+              <a href = "github.com/kchenturtles"><i className="fa-brands fa-github text-lg" /></a>
             </IconButton>
           </div>
         </div>
