@@ -15,7 +15,7 @@ export function FixedPlugin() {
           height={128}
           className="w-5 h-5"
           alt="Pew Research Center"
-          src="/pew-research-center.png"
+          src="/image/pew.png"
         />{" "}
         Explore Census Data
       </Button>
