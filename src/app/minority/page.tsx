@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 
-export function Minority() {
+function Minority() {
   const posts = getAllPosts();
   return (
     <div>

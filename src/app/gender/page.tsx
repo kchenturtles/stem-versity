@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 
-export function Gender() {
+function Gender() {
   const posts = getAllPosts();
   return (
     <div>

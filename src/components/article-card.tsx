@@ -12,7 +12,7 @@ interface ArticleCardProps {
     desc: string;
   }
   
-  export function ArticleCard({ img, title, desc }: ArticleCardProps) {
+function ArticleCard({ img, title, desc }: ArticleCardProps) {
     return (
       <Card
         className="relative grid min-h-[30rem] items-end overflow-hidden rounded-xl"

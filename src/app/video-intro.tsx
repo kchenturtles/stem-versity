@@ -6,7 +6,7 @@ import { IconButton } from "@material-tailwind/react";
 import { PlayIcon } from "@heroicons/react/24/outline";
 
 
-export function VideoIntro() {
+function VideoIntro() {
   return (
     <div className="p-8">
       <div className="w-full container px-5 overflow-hidden rounded-xl relative mx-auto mt-20 max-w-6xl ">

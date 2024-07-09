@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 
-export function Disability() {
+function Page() {
   const posts = getAllPosts();
   return (
     <div>
@@ -65,4 +65,4 @@ export function Disability() {
   );
 }
 
-export default Disability;
+export default Page;

@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 
-export function Underserved() {
+function Underserved() {
   const posts = getAllPosts();
   return (
     <div>

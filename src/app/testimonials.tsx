@@ -30,7 +30,7 @@ const TESTIMONIALS = [
   },
 ];
 
-export function Testimonials() {
+function Testimonials() {
   return (
     <section className="px-10 !py-20">
       <div className="container mx-auto">
