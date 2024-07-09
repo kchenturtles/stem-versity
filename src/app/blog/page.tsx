@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Footer, Navbar } from "@/components";
 import { LatestPostsCards } from "../latest-posts-cards";
 
-export async function Articles() {
+export async function Blog() {
   const posts = getAllPosts();
   
   return (
@@ -19,4 +19,4 @@ export async function Articles() {
     </div>
   );
 }
-export default Articles;
+export default Blog;
