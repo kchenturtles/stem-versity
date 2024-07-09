@@ -40,11 +40,11 @@ function Hero() {
             </div>
           </div>
           <Image
-            width={470}
-            height={576}
-            src="/image/iphones.png"
+            width={770}
+            height={200}
+            src="/image/react-icon.svg.png"
             alt="team work"
-            className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
+            className="col-span-1 my-20 h-full max-h-[20rem] -translate-y-32 md:max-h-[24rem] lg:my-0 lg:ml-auto lg:max-h-[30rem] w-auto lg:translate-y-0"
           />
         </div>
       </header>

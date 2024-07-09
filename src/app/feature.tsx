@@ -4,38 +4,39 @@ import React from "react";
 import { Typography } from "@material-tailwind/react";
 
 import {
-  CursorArrowRaysIcon,
   HeartIcon,
-  LightBulbIcon,
-  LockClosedIcon,
+  KeyIcon,
+  PuzzlePieceIcon,
+  HomeModernIcon,
+  GlobeAsiaAustraliaIcon
 } from "@heroicons/react/24/solid";
 
 import FeatureCard from "../components/feature-card";
 
 const FEATURES = [
   {
-    icon: CursorArrowRaysIcon,
+    icon: GlobeAsiaAustraliaIcon,
     title: "Minority Representation",
     link: "/minority",
     children:
       "Despite comprising 30% of the U.S. population, African American, Hispanic, and Native American individuals collectively account for only 13% of the STEM workforce (NSF, 2023).",
   },
   {
-    icon: HeartIcon,
+    icon: PuzzlePieceIcon,
     title: "Gender Diversity",
     link: "/gender",
     children:
       "Women, particularly those from minority and low-income backgrounds, also face significant underrepresentation, making up only 28% of the STEM workforce (NSF, 2023).",
   },
   {
-    icon: LockClosedIcon,
+    icon: KeyIcon,
     title: "Accessibility and Inclusion",
     link: "/accessibility",
     children:
       "Statistics indicate that a substantial number of STEM learning environments and resources are not adequately accessible digitally or physically.",
   },
   {
-    icon: LightBulbIcon,
+    icon: HomeModernIcon,
     title: "Supporting Underserved Communities",
     link: "/underserved",
     children:
