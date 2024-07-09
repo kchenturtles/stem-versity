@@ -29,12 +29,12 @@
   }
   
   .vert {
-    color: #c40000;
+    color: black;
   }
   
   .breakLine {
     height: 7px;
-    background-color: #c40000;
+    background-color: black;
     border-radius: 5px 0px 5px 0px;
     margin: 20px 50px;
     margin: auto;
@@ -67,8 +67,8 @@
   }
   
   .donateButton {
-    background-color: var(--color-brand);
-    border: 2px solid var(--color-brand);
+    background-color: black;
+    border: 2px solid black;
     border-radius: 12px;
     color: white;
     padding: 12px 1.5rem;
@@ -79,15 +79,6 @@
   
   a.inlineDonateButton.donateButton {
     color: white; /* Hack to fix this **** */
-  }
-  
-  .donateButton:hover {
-    background-color: transparent;
-    color: var(--color-brand);
-  }
-  
-  .brandText {
-    color: var(--color-brand);
   }
   
   .mediaIcons {
@@ -139,9 +130,12 @@
   .markdown ul,
   .markdown ol,
   .markdown blockquote {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:gray;
     font-weight: 200;
     text-align: justify;
+    list-style-type:circle;
   }
   
   .markdown img {
@@ -165,10 +159,20 @@
   .markdown h2 {
     font-weight: bold;
     font-size: 2.5rem;
-    color: #c40000;
+    color: black;
     text-align: center;
     line-height: 4rem;
     margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .markdown h3 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: black;
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
   }
   
@@ -176,9 +180,9 @@
     background-color: transparent;
     padding-bottom: 2rem;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 200;
-    color: gray;
+    color: black;
     width: 100%;
     margin: auto;
     margin-top: -1rem;
@@ -205,7 +209,7 @@
   }
   
   .postNavBar a {
-    color: #c40000;
+    color: black;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -213,7 +217,7 @@
   }
   
   .postNavBar a:hover {
-    color: #c40000;
+    color: black;
     text-decoration: underline;
   }
   
