@@ -1,12 +1,12 @@
 ---
-title: "Factors Contributing to the Underrepresentation of Underserved Communities in STEM"
+title: "An Introduction to the Greater Boston STEM Program"
 date: "July 2024"
 numericalDate: "2024-07-08"
 excerpt: ""
 author: "Kendree Chen"
 tag: "underserved"
-type: "research"
-summary: "Underserved communities face significant barriers in accessing and succeeding in STEM fields, perpetuating a cycle of underrepresentation and missed opportunities for diverse talent. These challenges range from limited educational resources and quality teaching to a lack of community support and exposure to STEM careers. "
+type: "blog"
+summary: "Lorem ipsum dolor sit amet. "
 coverImage: "/newsletter/bsu-gbos2024/bsu-gbos2024_1.jpg"
 ---
 
