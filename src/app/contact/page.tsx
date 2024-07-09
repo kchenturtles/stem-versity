@@ -13,7 +13,7 @@ import {
 } from "@material-tailwind/react";
 import { ArrowRightIcon, PhoneIcon, EnvelopeIcon, TicketIcon } from "@heroicons/react/24/outline";
 
-function Contact() {
+function Page () {
   return (
   <div>
     <header className="bg-gray-900 mb-96">
@@ -178,4 +178,4 @@ function Contact() {
 </div>
   );
 }
-export default Contact;
+export default Page;

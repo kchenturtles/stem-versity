@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 
-function Gender() {
+function Page() {
   const posts = getAllPosts();
   return (
     <div>
@@ -65,4 +65,4 @@ function Gender() {
   );
 }
 
-export default Gender;
+export default Page;
