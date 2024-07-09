@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Footer, Navbar } from "@/components";
 import { LatestPostsCards } from "../latest-posts-cards";
 
-export async function Blog() {
+function Blog() {
   const posts = getAllPosts();
   
   return (
