@@ -24,16 +24,12 @@ export async function LatestPostsCards({ tag, type, length }: { tag: string; typ
               key={post.id}
               className="bg-white rounded-lg shadow-lg overflow-hidden"
             >
-              <Image
-                width={768}
-                height={768}
-                src={"/img"}
-                alt="bg"
-                className="object-cover"
-              />
-              <div className="p-4">
-                <h1 className="text-xl font-bold">{post.title}</h1>
-                <p className="text-gray-500 mt-2">{post.content}</p>
+              <div className="p-8 py-10">
+                <div className = "text-gray-500 text-md">{post.date} </div>
+                <h1 className="text-xl font-bold mt-2 mb-2">{post.title}</h1>
+                <p className="text-gray-700 mt-2">{post.summary}</p>
+                <div className = "text-gray-500 mt-1 text-md"><p>#{post.tag} #{post.type}</p></div>
+                <a href = {`/blog/${post.slug}`}> <button className = "bg-gray-900 p-2 text-gray-50 rounded-lg hover:bg-gray-500 mt-5">Read More </button> </a>
               </div>
             </div>
           ))}
