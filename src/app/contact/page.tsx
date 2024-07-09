@@ -22,7 +22,7 @@ function Page () {
           width={1024}
           height={1024}
           alt="avatar"
-          src="/image/avatar1.jpg"
+          src="/image/logo.png"
           className="w-40 rounded-xl"
         />
         <div className="flex mt-16 justify-between">
