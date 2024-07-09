@@ -15,7 +15,7 @@ function Blog() {
       forget to subscribe to our blog and we will notify you with the latest
       news.
     </div>
-    <LatestPostsCards type = {""} tag = {""}/>
+    <LatestPostsCards type = {""} tag = {""} length={-1} />
     </div>
   );
 }

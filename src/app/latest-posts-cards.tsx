@@ -11,7 +11,7 @@ export async function LatestPostsCards({ tag, type, length }: { tag: string; typ
   if (type !== "") {
     posts = posts.filter((post) => post.type === type);
   }
-  if (length) {
+  if (length !== -1) {
     posts = posts.slice(0, length)
   }
   
