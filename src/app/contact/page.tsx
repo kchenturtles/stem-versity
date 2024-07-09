@@ -140,7 +140,7 @@ function Contact() {
               variant="lead"
               className="mx-auto mb-8 text-base !text-gray-500"
             >
-              Feel free to leave me your thoughts! I'd love to hear from you.
+              Feel free to leave me your thoughts! I&apos;d love to hear from you.
             </Typography>
             <div className="flex gap-5">
               <PhoneIcon className="h-6 w-6 text-white" />
