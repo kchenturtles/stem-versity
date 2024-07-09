@@ -67,7 +67,7 @@ function Contact() {
         Thoughts? Questions?
       </Typography>
       <Typography variant="lead" className="mx-auto !text-gray-500">
-        I'd love to hear from you!
+        I&apos;d love to hear from you!
       </Typography>
     </div>
     </div>

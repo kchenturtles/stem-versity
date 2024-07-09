@@ -22,7 +22,7 @@ export function Footer() {
               Discussions on STEM Diversity
             </Typography>
             <Typography color="white" className="mb-12 font-normal">
-              Let's build our future.
+              Let&apos;s build our future.
             </Typography>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
               {LINKS.map((link, idx) => (

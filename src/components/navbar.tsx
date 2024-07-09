@@ -97,7 +97,7 @@ export function Navbar() {
         </IconButton>
           <a href="https://github.com/kchenturtles/stem-versity" target="_blank">
             <Button color={isScrolling ? "gray" : "white"} size="sm" className = "hover:bg-gray-500">
-              View This Site's Code!
+              View This Site&apos;s Code!
             </Button>
           </a>
         </div>
@@ -137,7 +137,7 @@ export function Navbar() {
           </IconButton>
             <a href="https://github.com/kchenturtles/stem-versity" target="_blank">
               <Button color="gray" size="sm" className="ml-auto hover:bg-gray-500">
-                View This Site's Code!
+                View This Site&apos;s Code!
               </Button>
             </a>
           </div>
