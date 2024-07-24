@@ -73,7 +73,7 @@ export function Navbar() {
           variant="h6"
           color={isScrolling ? "gray" : "white"}
         >
-          Discussions on STEM Diversity 
+          STEMquity
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${

@@ -11,9 +11,7 @@ function Blog() {
     <div>
     <h1 className = "text-center block antialiased font-sans text-5xl leading-relaxed text-blue-gray-900 mb-2 mt-44 font-bold">All Posts</h1>
     <div className="text-center block antialiased font-sans text-lg font-normal leading-relaxed text-inherit mx-auto w-full !text-gray-500 lg:w-11/12 lg:px-8">
-      Check out what&apos;s new in the web development and tech world! Do not
-      forget to subscribe to our blog and we will notify you with the latest
-      news.
+      Check out the latest posts and articles.
     </div>
     <LatestPostsCards type = {""} tag = {""} length={-1} />
     </div>

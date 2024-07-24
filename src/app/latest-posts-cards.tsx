@@ -17,7 +17,7 @@ export async function LatestPostsCards({ tag, type, length }: { tag: string; typ
   
   return (
     <div>
-      <section className="container mx-auto px-8 py-20">
+      <section className="container mx-auto px-8 py-10">
         <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
           {posts.map((post) => (
             <div

@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import {
     Typography,
     Card,
@@ -26,6 +27,7 @@ import Link from "next/link";
           <Typography className=" font-normal !text-gray-500">
             {children}
           </Typography>
+          <ArrowRightIcon className = "rounded-lg text-gray-900 h-12 px-4 py-2 hover:opacity-25 text-right ml-auto"/>
         </CardBody>
       </Card>
       </Link>

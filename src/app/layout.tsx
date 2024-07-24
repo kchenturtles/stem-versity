@@ -10,7 +10,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Discussions in STEM Diversity",
+  title: "STEMquity",
   description: "A platform for discussions on diversity in STEM fields.",
 };
 

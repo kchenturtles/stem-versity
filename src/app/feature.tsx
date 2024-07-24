@@ -58,7 +58,7 @@ function Features() {
           variant="lead"
           className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
         >
-        The numbers don&apos;t lie: minority groups and individuals from low-income backgrounds are significantly underrepresented in STEM careers, despite comprising a significant portion of the population. Through targeted initiatives, such as devoting resources to support STEM education in underserved communities and advocating for diversity in STEM workforce recruitment, retention, and advancement, we can begin to address this problem.
+        The numbers don&apos;t lie: minority groups and individuals from low-income backgrounds are significantly underrepresented in STEM careers, despite comprising a significant portion of the population. By understanding the social factors that contribute to these statistics, we can take intentional action. From working to provide enriching STEM education to students in underserved communities, to promoting diverse role models, to redesigning lesson plans for inclusivity, we can do a lot to address this problem.
         </Typography>
       </div>
       <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">

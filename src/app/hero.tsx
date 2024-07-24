@@ -57,7 +57,7 @@ function Hero() {
             variant="paragraph"
             className="font-normal !text-gray-500 lg:w-5/12"
           >
-            This project aims to combine research with action to address issues regarding lack of diversity in STEM. Academic statistics and information in combination with actionable steps help empower individuals and policymakers to advocate for influential steps towards inclusive STEM education and workforce practices.
+            This project aims to combine research with strategies to address issues regarding lack of diversity in STEM. Academic statistics and information in combination with actionable steps help empower individuals, educators, and leaders alike to work towards a more inclusive future for STEM fields.
           </Typography>
         </div>
       </div>

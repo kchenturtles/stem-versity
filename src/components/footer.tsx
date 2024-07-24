@@ -19,7 +19,7 @@ export function Footer() {
               color="white"
               className="mb-4"
             >
-              Discussions on STEM Diversity
+              STEMquity
             </Typography>
             <Typography color="white" className="mb-12 font-normal">
               Let&apos;s build our future.

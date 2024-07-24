@@ -46,12 +46,13 @@ function Page () {
           </div>
         </div>
         <Typography variant="lead" className="!text-gray-500 mt-8">
-          {"Woman in STEM; educator; diversity advocate; public policy enthusiast; avid community engager; crocheter; cat mom"}
+          {"Woman in STEM; lover of learning; mentor; educator; diversity advocate; nonprofit president; avid community engager; crocheter; cat mom"}
         </Typography>
         <Button
           variant="text"
           color="gray"
           className="flex items-center gap-2 mt-2"
+          onClick={() => window.open("https://www.linkedin.com/in/kendree-chen/")}
         >
           more about me
           <ArrowRightIcon
@@ -142,25 +143,7 @@ function Page () {
             >
               Feel free to leave me your thoughts! I&apos;d love to hear from you.
             </Typography>
-            <div className="flex gap-5">
-              <PhoneIcon className="h-6 w-6 text-white" />
-              <Typography variant="h6" color="white" className="mb-2">
-                +1(424) 535 3523
-              </Typography>
-            </div>
-            <div className="flex my-2 gap-5">
-              <EnvelopeIcon className="h-6 w-6 text-white" />
-              <Typography variant="h6" color="white" className="mb-2">
-                hello@mail.com
-              </Typography>
-            </div>
-            <div className="flex mb-10 gap-5">
-              <TicketIcon className="h-6 w-6 text-white" />
-              <Typography variant="h6" color="white" className="mb-2">
-                Open Support Ticket
-              </Typography>
-            </div>
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-5 mt-48">
               <IconButton variant="text" color="white">
               <a href = "https://www.linkedin.com/in/kendree-chen/"><i className="fa-brands fa-linkedin text-lg" /></a>
               </IconButton>
