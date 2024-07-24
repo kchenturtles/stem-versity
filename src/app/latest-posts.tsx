@@ -29,7 +29,7 @@ export async function LatestPosts({ tag, type, length}: { tag: string; type: str
                 <h1 className="text-xl font-bold mt-2 mb-2">{post.title}</h1>
                 <p className="text-gray-700 mt-2">{post.summary}</p>
                 <div className = "text-gray-500 mt-1 text-md"><p>#{post.tag} #{post.type}</p></div>
-                <div className = "flex justify-end"> <a href = {`/blog/${post.slug}`}> <button className = "bg-gray-900 p-2 text-gray-50 rounded-lg hover:bg-gray-500 -mt-4">Read More</button> </a></div>
+                <div className = "flex justify-end"> <a href = {`/blog/${post.slug}`}> <button className = "bg-gray-900 p-2 text-gray-50 rounded-lg hover:bg-gray-500 -mt-4">READ MORE</button> </a></div>
               </div>
             </div>
           ))}

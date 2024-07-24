@@ -3,6 +3,8 @@ import BlogPostCard from "@/components/blog-post-card";
 import { getAllPosts } from "@/lib/api";
 import { LatestPostsCards } from "../latest-posts-cards";
 import Image from "next/image";
+import Link from "next/link";
+import { HomeIcon } from "@heroicons/react/24/outline";
 
 export const metadata = {
   title: "Accessibility in STEM",
@@ -23,7 +25,7 @@ function Page() {
             Science, Technology, Engineering, and Math (STEM) is the future. Innovation in STEM drives advancements in healthcare, technology, sustainability, and beyond, directly impacting the quality of life for people worldwide. Diversity in STEM is crucial to address the full range of issues that affect society today.  But statistics show that diversity remains an issue among students in STEM. How do we address this issue?
             </div>
             <div className="block antialiased font-sans text-md leading-relaxed text-inherit mx-auto w-full !text-gray-900 font-bold mt-12">
-            Read More
+            READ MORE
             </div>
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
             <button
@@ -38,27 +40,23 @@ function Page() {
           </div>
         </div>
       </header>
-    <div className="grid min-h-screen place-items-center p-8 mt-48">
-    <div className = "text-center block antialiased font-sans text-base text-xl leading-relaxed text-blue-gray-900 mb-2 font-bold uppercase">Research</div>
+    <div className="mt-56">
+    <div className = "text-center block antialiased font-sans text-base text-xl leading-relaxed text-blue-gray-900 font-bold uppercase">Research</div>
+    <div className="text-center block antialiased font-sans text-lg font-normal leading-relaxed text-inherit mx-auto w-full !text-gray-500">
+      Research, statistics, helpful data.
+    </div>
+        <LatestPostsCards tag={"accessibility"} type={"research"} length = {3}/>
+    </div>
+    <div className="mt-6">
+    <div className = "text-center block antialiased font-sans text-base text-xl leading-relaxed text-blue-gray-900 font-bold uppercase">How To Take Action</div>
     <div className="text-center block antialiased font-sans text-lg font-normal leading-relaxed text-inherit mx-auto w-full !text-gray-500 lg:w-11/12 lg:px-8">
-      Check out what&apos;s new in the web development and tech world! Do not
-      forget to subscribe to our blog and we will notify you with the latest
-      news.
+      Advice, strategies, and stories of taking action.
     </div>
-        <LatestPostsCards tag={"disability"} type={"research"} length = {3}/>
-    </div>
-    <div className="grid min-h-screen place-items-center p-8 mt-6">
-    <div className = "text-center block antialiased font-sans text-base text-xl leading-relaxed text-blue-gray-900 mb-2 font-bold uppercase">How To Take Action</div>
-    <div className="text-center block antialiased font-sans text-lg font-normal leading-relaxed text-inherit mx-auto w-full !text-gray-500 lg:w-11/12 lg:px-8">
-      Check out what&apos;s new in the web development and tech world! Do not
-      forget to subscribe to our blog and we will notify you with the latest
-      news.
-    </div>
-        <LatestPostsCards tag={"disability"} type={"blog"} length = {3}/>
+        <LatestPostsCards tag={"accessibility"} type={"blog"} length = {3}/>
       <button
-        className="flex items-center gap-2 mt-24 text-gray-50 bg-gray-900 px-4 py-2 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+        className="flex mx-auto items-center gap-2 mt-24 bg-white px-4 py-2 rounded-lg hover:shadow-xl transition duration-300 ease-in-out"
       >
-        READ MORE
+      <Link href = "/resources"><HomeIcon className="h-8 color-gray-900" /></Link>
       </button>
     </div>
     </div>

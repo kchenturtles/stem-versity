@@ -6,7 +6,7 @@ export async function LatestPostsCards({ tag, type, length }: { tag: string; typ
   let posts = getAllPosts();
 
   if (tag !== "") {
-    posts = posts.filter((post) => post.tag === tag);
+    posts = posts.filter((post) => post.tag.includes(tag));
   }
   if (type !== "") {
     posts = posts.filter((post) => post.type === type);
@@ -28,8 +28,8 @@ export async function LatestPostsCards({ tag, type, length }: { tag: string; typ
                 <div className = "text-gray-500 text-md">{post.date} </div>
                 <h1 className="text-xl font-bold mt-2 mb-2">{post.title}</h1>
                 <p className="text-gray-700 mt-2">{post.summary}</p>
-                <div className = "text-gray-500 mt-1 text-md"><p>#{post.tag} #{post.type}</p></div>
-                <a href = {`/blog/${post.slug}`}> <button className = "bg-gray-900 p-2 text-gray-50 rounded-lg hover:bg-gray-500 mt-5">Read More </button> </a>
+                <div className = "text-gray-500 mt-1 text-md"><p>{post.tag.split(' ').map((tag) => `#${tag} `)}#{post.type}</p></div>
+                <a href = {`/blog/${post.slug}`}> <button className = "bg-gray-900 p-2 text-gray-50 rounded-lg hover:bg-gray-500 mt-5">READ MORE</button> </a>
               </div>
             </div>
           ))}

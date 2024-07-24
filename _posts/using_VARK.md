@@ -1,10 +1,10 @@
 ---
-title: "An Introduction to the Greater Boston STEM Program"
-date: "July 2024"
-numericalDate: "2024-07-08"
+title: "Implementing the VARK Model in Robotics Education"
+date: "August 2024"
+numericalDate: "2024-08-08"
 excerpt: ""
 author: "Kendree Chen"
-tag: "minority underserved"
+tag: "accessibility"
 type: "blog"
 summary: "Lorem ipsum dolor sit amet. "
 ---

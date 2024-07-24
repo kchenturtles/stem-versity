@@ -1,12 +1,12 @@
 ---
-title: "An Introduction to the Greater Boston STEM Program"
+title: "No, Femininity Is Not The Problem"
 date: "July 2024"
 numericalDate: "2024-07-08"
 excerpt: ""
 author: "Kendree Chen"
-tag: "minority underserved"
+tag: "gender"
 type: "blog"
-summary: "Lorem ipsum dolor sit amet. "
+summary: "Underserved communities face significant barriers in accessing and succeeding in STEM fields, perpetuating a cycle of underrepresentation and missed opportunities for diverse talent. These challenges range from limited educational resources and quality teaching to a lack of community support and exposure to STEM careers. "
 ---
 
 Underserved communities face significant barriers in accessing and succeeding in STEM fields, perpetuating a cycle of underrepresentation and missed opportunities for diverse talent. These challenges range from limited educational resources and quality teaching to a lack of community support and exposure to STEM careers. Addressing these issues is crucial not only for promoting equity but also for harnessing the diverse perspectives and talents that drive innovation in science, technology, engineering, and mathematics. By enhancing representation and support for students from underserved backgrounds, we can build a more inclusive STEM workforce that reflects and addresses the needs of our diverse society.

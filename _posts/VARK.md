@@ -1,11 +1,11 @@
 ---
-title: "An Introduction to the Greater Boston STEM Program"
+title: "What is the VARK Learning Model and How is it Relevant to Student Engagement in STEM?"
 date: "July 2024"
 numericalDate: "2024-07-08"
 excerpt: ""
 author: "Kendree Chen"
-tag: "minority underserved"
-type: "blog"
+tag: "accessibility"
+type: "research"
 summary: "Lorem ipsum dolor sit amet. "
 ---
 
