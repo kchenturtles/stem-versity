@@ -52,7 +52,7 @@ function Features() {
           Building Diversity
         </Typography>
         <Typography variant="h1" color="blue-gray" className="mb-4">
-          Concentrations
+          Featured
         </Typography>
         <Typography
           variant="lead"

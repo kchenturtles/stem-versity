@@ -19,33 +19,35 @@ function Hero() {
             >
             Science, Technology, Engineering, and Math (STEM) is the future. Innovation in STEM drives advancements in healthcare, technology, sustainability, and beyond, directly impacting the quality of life for people worldwide. Diversity in STEM is crucial to address the full range of issues that affect society today.  But statistics show that diversity remains an issue among students in STEM. How do we address this issue?
             </Typography>
-            <Typography className="mb-4 mt-12" color="white" variant="h6">
-              Dive In
-            </Typography>
-            <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
-              <Button
-                size="lg"
-                color="white"
-                className="flex justify-center items-center gap-3 hover:bg-gray-500"
-              >
-                Resources
-              </Button>
-              <Button
-                size="lg"
-                color="white"
-                className="flex justify-center items-center gap-3 hover:bg-gray-500"
-              >
-                About
-              </Button>
-            </div>
           </div>
           <Image
             width={770}
-            height={200}
+            height={700}
             src="/image/react-icon.svg.png"
             alt="team work"
-            className="col-span-1 my-20 h-full max-h-[20rem] -translate-y-32 md:max-h-[24rem] lg:my-0 lg:ml-auto lg:max-h-[30rem] w-auto lg:translate-y-0"
+            className="col-span-1 h-full max-h-[2rem] md:max-h-[4rem] lg:my-0 lg:ml-auto lg:max-h-[6rem] w-auto justify-self-start"
           />
+        </div>
+        <div className = "container mx-auto">
+        <Typography className="mb-4 mt-2" color="white" variant="h6">
+              Dive In
+            </Typography>
+            <div className="flex flex-col gap-2 mb-32 md:mb-20 md:w-10/12 md:flex-row">
+              <Button
+                size="lg"
+                color="white"
+                className="flex justify-center items-center gap-3 hover:bg-gray-500"
+                >
+                <a href = "/resources">Resources</a>
+              </Button>
+              <Button
+                size="lg"
+                color="white"
+                className="flex justify-center items-center gap-3 hover:bg-gray-500"
+              >
+              <a href = "/about">About</a>
+              </Button>
+            </div>
         </div>
       </header>
       <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md">
