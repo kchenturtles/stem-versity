@@ -6,15 +6,31 @@ excerpt: ""
 author: "Kendree Chen"
 tag: "accessibility"
 type: "research"
-summary: "Lorem ipsum dolor sit amet. "
+summary: "The VARK learning model is a widely recognized framework that categorizes learners into four primary types based on their preferred learning styles: Visual, Auditory, Reading/Writing, and Kinesthetic. How can this help us make our classrooms more welcoming and accomodating places?"
 ---
+The VARK learning model is a widely recognized framework that categorizes learners into four primary types based on their preferred learning styles: Visual, Auditory, Reading/Writing, and Kinesthetic. Understanding and applying the VARK model can be particularly beneficial for students with disabilities, as it encourages educators to tailor their teaching methods to accommodate diverse learning needs. 
 
-Underserved communities face significant barriers in accessing and succeeding in STEM fields, perpetuating a cycle of underrepresentation and missed opportunities for diverse talent. These challenges range from limited educational resources and quality teaching to a lack of community support and exposure to STEM careers. Addressing these issues is crucial not only for promoting equity but also for harnessing the diverse perspectives and talents that drive innovation in science, technology, engineering, and mathematics. By enhancing representation and support for students from underserved backgrounds, we can build a more inclusive STEM workforce that reflects and addresses the needs of our diverse society.
+### Here is a basic introduction to the VARK types: 
+VARK stands for **Visual**, **Auditory**, **Reading/Writing**, **Kinesthetic**
 
+**Visual Learners:** These students benefit from visual aids such as charts, diagrams, and videos. For students with disabilities, incorporating visual elements can help them better grasp complex concepts and retain information.
+
+**Auditory Learners:** Auditory learners thrive through listening. For students with auditory processing difficulties, using clear and structured verbal instructions, discussions, and auditory materials can help them engage more effectively with the content.
+
+**Reading/Writing Learners:** These students prefer written text and benefit from reading and writing activities. Providing accessible reading materials and allowing for written responses can help students with disabilities express their understanding and knowledge.
+
+**Kinesthetic Learners:** Kinesthetic learners learn best through hands-on activities. For students with disabilities, incorporating movement and tactile experiences can make learning more engaging and memorable. Activities such as role-playing or building models can enhance their understanding.
 Students from underserved communities face multifaceted challenges that hinder their growth and success in STEM fields:
-### Limited Educational Resources: 
-Schools in low-income areas often lack funding for updated technology, laboratory equipment, and qualified STEM educators. This disparity in resources creates an uneven playing field, where students from affluent districts have access to advanced coursework and extracurricular STEM activities, while their counterparts struggle with basic learning materials (US Department of Education, 2021).
-### Quality of Teaching:
-High teacher turnover rates and shortages of qualified STEM instructors in underserved schools further impede educational quality. Without consistent, experienced educators, students may lack mentorship and guidance critical for fostering interest and proficiency in STEM subjects (Education Trust, 2022).
-### Community Support and Exposure: 
-Many underserved students lack exposure to STEM mentors and career opportunities within their communities. This absence of visible pathways to success in STEM fields can deter students from pursuing these disciplines, reinforcing the cycle of underrepresentation (Education Week, 2023).
+
+### The Importance of VARK
+The VARK model advocates for lessons to have many different ways in which information is conveyed, such as visual aids, videos, charts, and interactive activities in addition to existing materials. In every scenario it is important to recognize what the common teaching method is, and to accomodate alternative methods as well. For instance, although auditory learning is very common in lecture settings, materials and handouts do not often accomadate it. Having methods that aim to help every student learn creates a more supporting learning environment and helps students with learning differences feel included. 
+
+Here are some examples of how VARK alternatives could help neurodivergent students succeed: 
+
+**Visual Learning:** Students with dyscalculia often find it difficult to understand numerical concepts. By using visual tools like charts, graphs, and manipulatives, teachers can help these students visualize mathematical relationships, making abstract concepts more concrete and understandable.
+
+**Auditory Learning:** For students with dyslexia, listening to audiobooks or auditory materials can relieve the pressure of decoding written text. This auditory approach enables them to access content more easily, improving comprehension and retention.
+
+**Read/Write Learning:** While traditional reading and writing may be challenging for students with ADHD, providing structured notes and encouraging brief, focused writing tasks can help them stay engaged. Using bullet points, lists, and summaries allows for easier processing and retention of information.
+
+**Kinesthetic Learning:** Students with ADHD often benefit from engaging visuals and hands-on activities. Using diagrams, infographics, and interactive materials can capture their attention better than traditional text-based methods. Incorporating movement into lessons—like using physical activities to illustrate concepts—can also help maintain focus.
